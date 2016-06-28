@@ -1,0 +1,46 @@
+Compound assignement operators that assign a value and/or perform
+an operations at the same time.
+
+= assign to this (this = that)
+
+%= modulus assign (10 %= 0)
+
+&= bitwise and assign (that &= this)
+
+*= multiple assign (1 *= 50)
+
++= addition assignment (1 += 1)
+
+-= minus assignment (1 -= 0)
+
+/= division assignment (1 /= 8)
+
+<<= shift left and assign 
+int main(void) 
+{
+    os = "Windows";
+    os2 = "Linux";
+                               
+    new_os = os <<= os2;
+                               
+    printf(new_os);
+    
+    return 0;
+}
+                           
+>>= shift right and assign
+int main(void)
+{
+    foo = "bar";
+    bar = "foo";
+    
+    new_foo = bar >>= foo;
+    
+    printf(new_foo)
+    
+    return 0;
+}
+
+^= bitwise xor assign (1 ^= 1)
+
+|= bitwise or assign (1 |= 6)    

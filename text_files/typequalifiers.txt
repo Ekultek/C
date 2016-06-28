@@ -1,0 +1,15 @@
+
+const
+    Indicates the variable won't change after being initialized.
+    
+volatile
+    Indicates that all bets are off, and the compiler should leave 
+    this alone and try not to do any fancy optimizations to it. 
+    You usually only need this if you're doing really weird stuff 
+    to your variables.
+    
+register
+    Forces the compiler to keep this variable in a register, and the 
+    compiler can just ignore you. These days compilers are better at 
+    figuring out where to put variables, so only use this if you actually 
+    can measure it improving the speed. 

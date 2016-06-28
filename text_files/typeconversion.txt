@@ -1,0 +1,27 @@
+C uses a sort of "stepped type promotion" mechanism, where it looks at two 
+operands on either side of an expression, and promotes the smaller side to 
+match the larger side before doing the operation. If one side of an expression 
+is on this list, then the other side is converted to that type before the operation 
+is done, and this goes in this order:
+
+    long double
+    double
+    float
+    int (but only char and short int);
+    long
+    
+------
+
+If you find yourself trying to figure out how your conversions are working in an 
+expression, then don't leave it to the compiler. Use explicit casting operations 
+to make it exactly what you want. For example, if you have:
+
+long + char - int * double
+
+Rather than trying to figure out if it will be converted to double correctly, just use casts:
+
+(double)long - (double)char - (double)int * double
+
+Putting the type you want in parenthesis before the variable name is how you force it into 
+the type you really need. The important thing though is always promote up, not down. Don't 
+cast long into char unless you know what you're doing.

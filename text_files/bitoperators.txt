@@ -1,0 +1,14 @@
+These are more advanced and for shifting and modifying the raw bits in integers.
+
+& (binary)
+    Bitwise and.
+    
+<< Shift left.
+
+>> Shift right.
+
+^ bitwise xor (exclusive or).
+
+| bitwise or.
+
+~ compliment (flips all the bits). 

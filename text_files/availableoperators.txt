@@ -1,0 +1,21 @@
+This is a comprehensive list of all the operators you have in the C language. 
+In this list, I'm indicating the following:
+
+(binary)
+    The operator has a left and right: X + Y.
+    
+(unary)
+    The operator is on its own: -X.
+    
+(prefix)
+    The operator comes before the variable: ++X.
+    
+(postfix)
+
+    Usually the same as the (prefix) version, but placing it
+    after gives it a different meaning: X++.
+    
+(ternary)
+
+    There's only one of these, so it's actually called the
+    ternary but it means "three operands": X ? Y : Z.

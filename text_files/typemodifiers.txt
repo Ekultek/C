@@ -1,0 +1,16 @@
+
+unsigned
+    Changes the type so that it does not have negative numbers, 
+    giving you a larger upper bound but nothing lower than 0.
+    
+signed
+    Gives you negative and positive numbers, but halves your 
+    upper bound in exchange for the same lower bound negative.
+    
+long
+    Uses a larger storage for the type so that it can hold bigger
+    numbers, usually doubling the current size.
+    
+short
+    Uses smaller storage for the type so it stores less, but takes 
+    half the space. 

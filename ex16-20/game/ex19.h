@@ -15,9 +15,9 @@ int Monster_init(void *self);
 
 struct Room {
     Object proto;
-    
+
     Monster *bad_guy;
-    
+
     struct Room *north;
     struct Room *south;
     struct Room *east;
@@ -29,6 +29,7 @@ typedef struct Room Room;
 void *Room_move(void *self, Direction direction);
 int Room_attack(void *self, int damage);
 int Room_init(void *self);
+
 
 struct Map {
     Object proto;

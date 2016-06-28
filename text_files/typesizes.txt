@@ -1,0 +1,128 @@
+The stdint.h defines both a set of typdefs for exact sized integer 
+types, as well as a set of macros for the sizes of all the types. 
+This is easier to work with than the older limits.h since it is consistent. 
+The types defined are:
+
+int8_t
+    8 bit signed integer.
+    
+uint8_t
+    8 bit unsigned integer.
+    
+int16_t
+    16 bit signed integer.
+    
+uint16_t
+    16 bit unsigned integer.
+    
+int32_t
+    32 bit signed integer.
+    
+uint32_t
+    32 bit unsigned integer.
+    
+int64_t
+    64 bit signed integer.
+    
+uint64_t
+    64 bit unsigned integer.
+
+The pattern here is of the form (u)int(BITS)_t where a u is put in front to 
+indicate "unsigned", then BITS is a number for the number of bits. 
+This pattern is then repeated for macros that return the maximum values 
+of these types:
+
+INT(N)_MAX
+    Maximum positive number of the signed integer of bits (N), such as INT16_MAX.
+    
+INT(N)_MIN
+    Minimum negative number of signed integer of bits (N).
+    
+UINT(N)_MAX
+    Maximum positive number of unsigned integer of bits (N). Since it's unsigned 
+    the minimum is 0 and can't have a negative value.
+    
+
+
+Warning
+
+Pay attention! Do not go looking for a literal INT(N)_MAX definition in any header 
+file. I'm using the (N) as a placeholder for any number of bits your platform 
+currently supports. This (N) could be any number, 8, 16, 32, 64, even maybe 128. 
+I use this notation in this exercise so that I don't have to literally write out 
+every possible combination.
+
+There are also macros in stdint.h for sizes of the size_t type, integers large 
+enough to hold pointers, and other handy size defining macros. 
+Compilers have to at least have these, and then they can allow other larger types.
+
+Here is a full list should be in stdint.h:
+
+int_least(N)_t
+    holds at least (N) bits.
+    
+uint_least(N)_t
+    holds at least (N) bits unsigned.
+
+INT_LEAST(N)_MAX
+    max value of the matching least (N) type.
+
+INT_LEAST(N)_MIN
+    min value of the matching least (N) type.
+
+UINT_LEAST(N)_MAX
+    unsigned maximum of the matching (N) type.
+
+int_fast(N)_t
+    similar to int_least*N*_t but asking for the "fastest" with at least that precision.
+
+uint_fast(N)_t
+    unsigned fastest least integer.
+
+INT_FAST(N)_MAX
+    max value of the matching fastest (N) type.
+
+INT_FAST(N)_MIN
+    min value of the matching fastest (N) type.
+
+UINT_FAST(N)_MAX
+    unsigned max value of the matching fastest (N) type.
+
+intptr_t
+    a signed integer large enough to hold a pointer.
+
+uintptr_t
+    an unsigned integer large enough to hold a pointer.
+
+INTPTR_MAX
+    max value of a intptr_t.
+
+INTPTR_MIN
+    min value of a intptr_t.
+
+UINTPTR_MAX
+    unsigned max value of a uintptr_t.
+
+intmax_t
+    biggest number possible on that system.
+
+uintmax_t
+    biggest unsigned number possible.
+
+INTMAX_MAX
+    largest value for the biggest signed number.
+
+INTMAX_MIN
+    smallest value for the biggest signed number.
+
+UINTMAX_MAX
+    largest value for the biggest unsigned number.
+
+PTRDIFF_MIN
+    minimum value of ptrdiff_t.
+
+PTRDIFF_MAX
+    maximum value of ptrdiff_t.
+
+SIZE_MAX
+    maximum of a size_t. 

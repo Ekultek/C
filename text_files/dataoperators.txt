@@ -1,0 +1,15 @@
+These are used to access data in different ways and forms.
+
+-> struct pointer access.
+
+. struct value access.
+
+[] Array index.
+
+sizeof size of a type or variable.
+
+& (unary)
+    Address of.
+    
+* (unary)
+    Value of. 

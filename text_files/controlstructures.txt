@@ -1,0 +1,17 @@
+Some control structures
+
+do-while (do { ... } while (x);)
+int main(void)
+{
+    int x = 5;
+    
+    do { printf(x++) } while(x > 6)
+    
+    return 0;
+}
+
+break used in loops to end the looping
+
+continue stops the loop and jumps to the testing phase
+
+goto jumps to a spot in the code where you've placed a label

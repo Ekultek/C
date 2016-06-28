@@ -1,0 +1,21 @@
+
+int
+    Stores a regular integer, defaulting to 32 bits in size.
+    
+double
+    Holds a large floating point number.
+    
+float
+    Holds a smaller floating point number.
+    
+char
+    Holds a single 1 byte character.
+    
+void
+    Indicates "no type" and used to say a function returns nothing, 
+    or a pointer has no type as in void *thing.
+    
+enum
+    Enumerated types, work as integers, convert to integers, 
+    but give you symbolic names for sets. Some compilers will 
+    warn you when you don't cover all elements of an enum in switch-statements. 

@@ -1,0 +1,32 @@
+These are your basic math operations, plus I put () in with these 
+since it calls a function and is close to a "math" operation.
+
+()
+    Function call.
+* (binary)
+    multiply.
+/   divide.
+
++ (binary)
+    addition.
+    
++ (unary)
+    positive number.
+    
+++ (postfix)
+    read, then increment.
+    
+++ (prefix)
+    increment, then read.
+    
+-- (postfix)
+    read, then decrement.
+    
+-- (prefix)
+    decrement, then read.
+    
+- (binary)
+    subtract.
+    
+- (unary)
+    negative number. 

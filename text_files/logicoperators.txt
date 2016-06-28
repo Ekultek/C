@@ -1,0 +1,13 @@
+These handle testing equality and inequality of variables.
+
+!= does not equal.
+
+< less than.
+
+<= less than or equal.
+
+== equal (not assignment).
+
+> greater than.
+
+>= greater than or equal. 

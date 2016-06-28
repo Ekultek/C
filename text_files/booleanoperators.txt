@@ -1,0 +1,9 @@
+Used in truth testing, example yes && yes !(no)
+
+! Not operator
+
+&& and operator
+
+|| or operator
+
+? : ternary operators (this is true ? execute this : execute this)
